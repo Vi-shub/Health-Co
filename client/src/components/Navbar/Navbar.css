@@ -1,0 +1,217 @@
+.navbar-section {
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 93px;
+    background-color: white;
+    margin: 4px 0;
+}
+.navbar-title a {
+    color: #1A8EFD;
+    letter-spacing: .6px;
+    text-decoration: none;
+}
+.navbar-title {
+    font-family: 'Poppins', sans-serif;
+}
+.navbar-sign {
+    color: #54de54;
+    font-family: Cambria, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+.navbar-items {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    font-family: 'Rubik', sans-serif;
+}
+.navbar-items > li {
+    list-style-type: none;
+}
+.navbar-links {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    letter-spacing: .8px;
+}
+.navbar-links:hover {
+    color: #2E7BFF;
+}
+.navbar-btn {
+    padding: 14px 20px;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 28px;
+    outline: transparent;
+    background-color: #1A8EFD;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: .8px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.navbar-btn:hover {
+    color: #1A8EFD;
+    background-color: white;
+    border: 1px solid #1A8EFD;
+}
+/* Hamburger Icon */
+.mobile-nav {
+    display: none;
+}
+.hamb-icon {
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+.hamb-icon:hover {
+    color: #0cc2ea;
+}
+/* Mobile Navbar */
+.mobile-navbar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: white;
+    z-index: 20;
+    justify-content: center;
+    align-items: center;
+    transition: left .5s ease-in-out;
+}
+.mobile-navbar-close {
+    position: absolute;
+    top: 28px;
+    right: 28px;
+}
+.mobile-navbar-close .hamb-icon:hover {
+    color: rgb(255, 22, 22);
+}
+.open-nav {
+    left: 0;
+}
+.mobile-navbar-links {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    gap: 24px;
+    text-align: center;
+}
+.mobile-navbar-links li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    letter-spacing: .8px;
+    transition: color .3s ease-in-out;
+}
+.mobile-navbar-links li a:hover {
+    color: #0cc2ea;
+}
+/* Responsive */
+@media screen and (max-width: 900px) {
+    .navbar-btn, .navbar-items {
+        display: none;
+    }
+    .mobile-nav {
+        display: block;
+    }
+    .navbar-title{
+        margin-right: 1rem;
+        align-self: left;
+    }
+
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: dodgerblue;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 20px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+
+  .mobile-navbar-dropdown .dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dropdown-icon {
+    margin-left: 10px;
+  }
+  
+  .dropdown-menu {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 5px;
+  }
+  
+  .dropdown-menu .dropdown-item {
+    display: block;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  .dropdown-menu .dropdown-item:hover {
+    background-color: #555;
+  }
+
+  /* Desktop Dropdown Title */
+.dropdown-content .dropdown-title {
+    padding: 8px 16px;
+    background-color: dodgerblue;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Mobile Dropdown Title */
+  .dropdown-menu .dropdown-title-mobile {
+    padding: 8px 16px;
+    background-color: dodgerblue;
+    color: white;
+    font-weight: bold;
+  }
+  
